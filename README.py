@@ -6,4 +6,4 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 csvu = input("Enter a csv file") 
 max = pd.read_csv(csvu)
-print("The top 3 contributing factors to vehicle collisions are: ", max["CONTRIBUTING FACTOR VEHICLE 1"])
+print("The top 3 contributing factors to vehicle collisions are: ", max["CONTRIBUTING FACTOR VEHICLE 1"].value_counts()[:3])
